@@ -1,0 +1,111 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body class="tema" style="background-color:#121212; color: white;">
+<div class="mainbox" style=" height:700px; width: 700px; margin-left: auto; margin-right: auto; ">
+	<div class="textbox" style="background-color:black; height:100px; width: 700px; font-family:arial; text-align: center; font-size: 36px; border-radius: 15px; padding-top: 50px;">
+		Было 2 козла, сколько?
+	</div>
+	<div class="box1f" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Сколько?
+	</div>
+	<div class="box2t" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Да
+	</div>
+	<div class="box3f" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		2
+	</div>
+</div>
+<div class="mainbox2" style=" height:700px; width: 700px; margin-left: auto; margin-right: auto; display:none;">
+	<div class="imgbox" style=" height:450px; width: 700px;">
+		<img src="2.jpg" style="height: 400px; width: 700px;">
+		<div style="margin-left:auto; margin-right:auto;font-family:arial; text-align: center; font-size: 36px; ">Это кто?</div>
+	</div>
+	<div class="box4t" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Питер Паркер
+	</div>
+	<div class="box5f" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Питер Паркер
+	</div>
+	<div class="box6f" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Питер Паркер
+	</div>
+</div>
+<div class="mainbox3" style=" height:700px; width: 700px; margin-left: auto; margin-right: auto; display:none;">
+	<div class="imgbox2" style=" height:500px; width: 700px;">
+		<img src="3.jpg" style="height: 400px; width: 700px;">
+		<div style="margin-left:auto; margin-right:auto;font-family:arial; text-align: center; font-size: 36px; ">А это что за клоун?</div>
+	</div>
+	<div class="box7f" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Клоун из цирка
+	</div>
+	<div class="box8f" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Так себе шутник
+	</div>
+	<div class="box9t" style="height:50px; width:500px; margin-left: auto; margin-right: auto; text-align: center; font-size:30px; font-family:arial; margin-top:15px;">
+		Джокер
+	</div>
+</div>
+<div class="mainbox4" style=" height:700px; width: 700px; margin-left: auto; margin-right: auto; display:none;">
+	<div class="imgbox2" style=" height:300px; width: 700px; font-family:arial; text-align: center; font-size: 36px;">
+		Харош, мегахарош, мегасупердуперультрауберкиберхарош, хочешь еще раз пройти? Правда зачем...
+		В общем сам выбери
+	</div>
+	<div style="display: flex;">
+	<button class="da" style="margin-left:200px; background-color: black; border: none; color: white;">Да</button>
+	<button class="net" style="margin-left:200px; background-color: black; border: none; color: white;">Да не, спасибо</button>
+	</div>
+</div>
+<div class="mainboxnone" style=" height:700px; width: 700px; margin-left: auto; margin-right: auto; display:none;">
+пустота...
+</div>
+
+<script type="text/javascript">
+		document.querySelector(".box2t").onclick = function(){
+			alert("Да")
+			document.querySelector(".mainbox").style.display = "none";
+			document.querySelector(".mainbox2").style.display = "block";
+		}
+		document.querySelector(".box1f").onclick = function(){
+			alert("Думай думай")
+		}
+		document.querySelector(".box3f").onclick = function(){
+			alert("Почему 2, не все так очевидно")
+		}
+		document.querySelector(".box4t").onclick = function(){
+			alert("Да, почему именно этот я сам незнаю")
+			document.querySelector(".mainbox2").style.display = "none";
+			document.querySelector(".mainbox3").style.display = "block";
+		}
+		document.querySelector(".box5f").onclick = function(){
+			alert("Нет")
+		}
+		document.querySelector(".box6f").onclick = function(){
+			alert("Нет")
+		}
+		document.querySelector(".box9t").onclick = function(){
+			alert("Да, тот еще клоун")
+			document.querySelector(".mainbox3").style.display = "none";
+			document.querySelector(".mainbox4").style.display = "block";
+		}
+		document.querySelector(".box7f").onclick = function(){
+			alert("Сам ты из цирка")
+		}
+		document.querySelector(".box8f").onclick = function(){
+			alert("Сам ты так себе шутник")
+		}
+		document.querySelector(".da").onclick = function(){
+			alert("Как хочешь")
+			document.querySelector(".mainbox4").style.display = "none";
+			document.querySelector(".mainbox").style.display = "block";
+		}
+		document.querySelector(".net").onclick = function(){
+			alert("Ну ок, пока")
+			document.querySelector(".mainbox4").style.display = "none";
+			document.querySelector(".mainboxnone").style.display = "block";
+		}
+</script>
+</body>
+</html>
